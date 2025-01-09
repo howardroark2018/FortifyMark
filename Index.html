@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <style>
+        body {
+            font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 50px 0; /* Added padding at the top and bottom */
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align the content towards the top */
+            height: 100%;
+        }
+        .certificate-container {
+            background: white;
+            box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15), 0px -4px 8px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .certificate-container:hover {
+            transform: translateY(-30px);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2), 0px -6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .certificate-heading {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .certificate-content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+        .certificate-content .bold {
+            font-weight: 600;
+            color: #222;
+        }
+        .divider {
+            border-top: 2px solid #eaeaea;
+            margin: 20px 0;
+        }
+        .highlight {
+            color: #007aff;
+        }
+        .scope-box {
+            background: #f9fafc;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .footer {
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(145deg, #007aff, #005bb5);
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .button:hover {
+            background: linear-gradient(145deg, #005bb5, #003d85);
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3), 0px -6px 12px rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            .certificate-container {
+                padding: 20px;
+            }
+            .certificate-heading {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">
+        <div class="certificate-heading">This Certificate is Authentic and Valid</div>
+        <div class="certificate-content">
+            <p class="bold highlight">FORTIFYMARK PVT. LTD.</p>
+            <p>Has been assessed by <span class="bold highlight">Euroglobe Registrars</span> and found to comply with the requirements of</p>
+            <p class="bold highlight">ISO/IEC 20000-1:2018</p>
+            <p class="bold">INFORMATION TECHNOLOGY MANAGEMENT SYSTEM</p>
+            <div class="divider"></div>
+            <p class="bold">For the following Scope:</p>
+            <div class="scope-box">
+                PROVIDING BRAND PROTECTION, PREVENTION OF BRAND THEFT, INTELLECTUAL PROPERTY SECURITY, <br>
+                PROACTIVELY ADDRESSING THE RISKS POSED BY COUNTERFEITING, UNAUTHORIZED USE, AND BRAND EXPLOITATION.
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="https://fortifymark.com" class="button" target="_blank">Visit FortifyMark.com</a>
+        </div>
+        <div class="footer">© 2025 EuroGlobe Registrars, UK. All rights reserved.</div>
+    </div>
+</body>
+</html>
